@@ -1,0 +1,227 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* sidebar */
+
+.sidebar {
+  background: #1e1e2d;
+  height: 100vh;
+  float: left;
+  width: 270px;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.heading {
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.DashboardHeading {
+  font-family: "Verdana";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.ArrowIcon {
+  height: 27px;
+}
+
+.Dashboard {
+  background: #1b1b28;
+  display: flex;
+  align-items: center;
+  height: 45px;
+}
+
+.Dashboard ul {
+  margin-left: 22px;
+  padding-left: 0;
+}
+
+.Dashboard ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.DashboardIcon {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Dashboardli {
+  color: #ffffff;
+}
+
+/* CUSTOM */
+.custom {
+  text-align: left;
+  padding-left: 30px;
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #4a4b68;
+}
+
+.Application {
+  background: #1b1b28;
+  display: flex;
+  height: 45px;
+  align-items: center;
+}
+
+.Applications {
+  display: flex;
+}
+
+.Application ul {
+  margin-left: 22px;
+  padding-left: 0;
+}
+
+.ApplicationIcon {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.Application ul li a {
+  color: #ffffff;
+  display: flex;
+  text-decoration: none;
+}
+
+.downarrow {
+  filter: invert(100%);
+  height: 20px;
+  margin-left: 70px;
+  display: flex;
+}
+
+.listItem ul {
+  text-align: left;
+  padding-right: 30px;
+}
+
+.listItem ul li a {
+  color: #888c9f;
+  text-decoration: none;
+  padding: 8px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listItem ul li img {
+  filter: invert(60%);
+  height: 20px;
+  text-align: right;
+}
+
+.page ul {
+  margin-left: 22px;
+  padding-left: 0;
+}
+
+.pageLi a {
+  color: #888c9f;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.pageLi a span {
+  align-items: center;
+  display: flex;
+}
+.PagesIcon {
+  margin-right: 10px;
+}
+
+.PagesArrowIcon {
+  filter: invert(60%);
+  height: 20px;
+}
+
+.sidebar.show {
+  transform: translateX(0);
+}
+
+.sidebar.hide {
+  transform: translateX(-100%);
+}
+
+.toggle-btn {
+  display: none;
+}
+
+/* Media query for smaller screens (e.g., phones) */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    display: none;
+    transform: translateX(-100%);
+  }
+
+  .toggle-btn {
+    display: block;
+    /* Show the button for smaller screens */
+    position: absolute;
+    height: 35px;
+    width: 32px;
+    margin-left: 10px;
+    margin-top: 5px;
+    /* left: 200px; */
+  }
+
+  .sidebar.show {
+    display: block;
+    margin-top: 50px;
+    transform: translateX(0);
+  }
+}

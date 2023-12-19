@@ -1,0 +1,9 @@
+.Middle {
+  display: flex;
+  width: 1255px;
+  height: 250px;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #eff2f5;
+  margin-left: auto;
+}

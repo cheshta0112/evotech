@@ -1,0 +1,54 @@
+.SunHeader {
+  background-color: #ffffff;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.LeftDiv {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.RightDiv {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-right: -13px;
+  color: #959cb6;
+}
+
+.AddNew {
+  background-color: #fff4de;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  padding-top: 4px;
+  padding: 2px;
+  color: #ffa800;
+}
+
+.Today {
+  background-color: #f3f6f9;
+  text-align: center;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  color: #6993ff;
+}
+
+.Actions {
+  background-color: #f3f6f9;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  padding: 2px;
+  color: #959cbd;
+}

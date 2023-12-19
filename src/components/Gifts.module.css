@@ -1,0 +1,12 @@
+.Gifts {
+  display: flex;
+  width: 25.5%;
+  float: right;
+  height: 500px;
+  background: #eef0f8;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.GiftItems {
+}
