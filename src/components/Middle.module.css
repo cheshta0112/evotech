@@ -1,9 +1,23 @@
 .Middle {
   display: flex;
-  width: 1255px;
+  width: 1241px;
   height: 250px;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: space-between;
   background-color: #eff2f5;
-  margin-left: auto;
+}
+
+.Categories {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  background-color: red;
+  margin: 0;
+}
+
+.Sales {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  background-color: gray;
+  margin: 0;
 }

@@ -1,5 +1,4 @@
 import React from "react";
-import DashboardIcon from "../src/assets/icons/DashboardIcon";
 import ApplicationIcon from "../src/assets/icons/ApplicationIcon";
 import { useState } from "react";
 
@@ -24,7 +23,7 @@ export default function Sidebar() {
             <li>
               <a href="#">
                 <span className="DashboardIcon">
-                  <DashboardIcon />
+                  <img src="/images/Layers.png" />
                 </span>
                 <span className="Dashboardli">Dashboard</span>
               </a>
@@ -37,7 +36,13 @@ export default function Sidebar() {
         <div className="Application">
           <ul>
             <li>
-              <a href="#">
+              <a
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
                 <span className="Applications">
                   <span className="ApplicationIcon">
                     <ApplicationIcon />
@@ -54,7 +59,7 @@ export default function Sidebar() {
           </ul>
         </div>
 
-        <div className="listItem">
+        <div className="listItem collapse" id="collapseExample">
           <ul>
             <li>
               <a href="#">
@@ -79,7 +84,7 @@ export default function Sidebar() {
           </ul>
         </div>
 
-        <div className="page">
+        <div className="page ">
           <ul>
             <li className="pageLi">
               <a href="#">
@@ -97,7 +102,6 @@ export default function Sidebar() {
           </ul>
         </div>
       </div>
-      {/* Toggle button for smaller screens */}
 
       <img
         className="toggle-btn"
